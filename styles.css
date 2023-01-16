@@ -1,0 +1,310 @@
+
+
+*{margin: 0px; padding: 0px;}
+
+
+.bgColorBlack{background-color:black}
+
+.block{
+	display: block;
+}
+
+
+main{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	height: 100vh;
+
+}
+
+.hrWhiteLine{
+	border-top: 1px solid white;
+}
+
+.leftRightMargin{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	max-width: 1200px;
+}
+
+.headerGrid{
+	position: fixed;
+	max-width: 1200px;
+	width: 100%;
+	top: 0px;
+	background-color: black;
+	height: 90px;
+	display: grid;
+	grid-template-columns: 55% 45%;	
+	z-index: 100;
+}
+
+.headerGridItemLeft
+{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.icon{
+	height: 80px;
+	margin-left: 15px;
+}
+
+.headerGridItemRight{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-right: 15px;
+}
+
+.plFlag{
+	height: 25px;
+	padding-right: 10px;
+	margin-bottom: -5px;
+}
+
+.headerGridItemRight .fa {
+  	font-size: 35px;
+  	margin-right: 10px;
+}
+
+	/* Icons and logo in DIV*/
+
+	/* Facebook */
+	.fa-facebook {
+	  color: white;
+	}
+
+
+	/* email */
+	.fa-email {
+	  color: white;
+	}
+
+	/* youtube */
+	.fa-youtube {
+	  color: white;
+	}
+
+	.fa-spotify{
+	  color: white;
+
+	}
+
+	.fa-instagram{
+	  color: white;
+
+	}
+	
+	.fa-envelope{
+	  color: white;
+	}
+
+	.fa-apple{
+		color: white;
+	}
+
+	.fa-facebook-messenger{
+		color: white;
+	}
+
+
+	/* Hover Effect*/
+
+	.fa:hover {
+	  opacity: 0.3;
+	  text-decoration: none;
+	}
+
+	.fa-brands:hover {
+	  opacity: 0.3;
+	  text-decoration: none;
+	}
+
+
+
+
+/*End Of Header Stylization*/
+
+.mainPhoto{
+	width: 100%;
+/*	border-radius: 10px;*/
+
+}
+
+.text-WhoAreWe{
+	text-align: center;
+	color: white;
+}
+
+.logoFont{
+	font-family: 'Yellowtail', cursive;
+	transform: rotate(-10deg);
+}
+
+.margin25pxBottom{
+	margin-bottom: 40px;
+}
+
+.marginTop{
+margin-top: 100px;
+}
+
+
+
+/*VIDEO*/
+
+.videoGrid{
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;	
+}
+
+.iframeSmall{
+	display: none;
+}
+
+
+
+/*Venues*/
+
+.whereWePlayGrid{
+	display: grid;
+	grid-template-columns: 30% 70%;	
+
+}
+
+.whereWePlayGrid div{
+	text-align: left
+}
+
+.playingLive{
+	width: 100%;
+}
+
+.venuePhoto{
+	width: 100%;
+}
+.iframeEventSmall{
+	display: none;
+}
+
+/*Contact US*/
+
+
+.contactUsFlexContainer{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.contactUsFlexContainer a{
+	padding: 0px 20px 30px 25px;
+	font-size: 35px;
+	
+}
+
+
+.footerSmall{
+	display: none;
+}
+
+/*MEDIA SCREENS*/
+
+
+@media screen and (max-width: 600px) {
+
+	.iframeLarge{
+		display: none;
+	}
+	.iframeSmall {
+		display: block;
+	  position: relative;
+	  overflow: hidden;
+	  width: 100%;
+	  padding-top: 56.25%; 
+	  margin-bottom: 20px;
+	}
+	.iframeSmall iframe{
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  width: 100%;
+	  height: 100%;
+	}
+
+	.headerGridItemRight .fa {
+  	font-size: 30px;
+  	margin-right: 10px;
+	}
+	.plFlag{
+	height: 22px;}
+	
+	.whereWePlayGrid{
+	display: block;
+	}
+	.whereWePlayGrid div{
+	text-align: center;
+	}
+	.iframeEventSmall{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 520px) {
+
+	.headerGrid{
+		grid-template-columns: 100% 0%;
+		margin-left: -5px;		
+	}
+	.headerGridItemLeft{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 5px
+	}
+	.headerGridItemRight{
+		display: none;
+	}
+	
+
+	.footerSmall{
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		z-index: 100;
+		background-color: black;
+		padding: 10px;
+		border-top: solid white 1px;
+		border-bottom: solid black 1px;
+		margin-left: -10px;
+	}
+
+	.footerSmall a{
+		font-size: 30px;
+	}
+
+	.footerSmall .fa-facebook{
+		margin-left: 20px;
+	}
+
+	.plFlag{
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 345px) {
+	.events{
+		display: none;
+	}
+
+	}
+
